@@ -8,50 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I am an AI research scientist at OpenAI, formerly at Uber AI Labs.
+Hi, I'm Adrien Ecoffet. I am a research scientist at OpenAI.
 
-My research interests are Reinforcement Learning (particularly exploration) and AI Safety (particularly moral alignment).
+My research interests are reinforcement learning (particularly exploration and quality-diversity inspired approaches) and AI safety (particularly moral alignment). More recently I have been researching emergent complexity in multi-agent environments.
 
-More recently I have focused on emergent complexity from multi-agent interaction.
-
-Work
-======
-
-[OpenAI](https://www.openai.com)
------
-*May 2020 - present*
-
-Researching multi-agent reinforcement learning and in particular the emergence of complex behaviors in simple multi-agent environments.
-
-[Uber AI Labs](https://www.uber.com/us/en/uberai/)
------
-*June 2018 - May 2020*
-
-AI Resident then Research Scientist. Primarily researched exploration in reinforcement learning and moral uncertainty in AI safety.
-
-[Quora](https://www.quora.com)
------
-*Dec 2013 - Jan 2018*
-
-Software Engineer then Staff Software Engineer. Primarily worked on search, feed ranking, and was one of the founding engineers on the ads team.
-
-Education
-=====
-
-## [Georgia Tech](https://www.gatech.edu/)
-MS, Computer Science (Machine Learning) <span style="float: right;">*2017 - 2018*</span>
-
-## [Epitech](https://www.epitech.eu/)
-BS, Computer Engineering <span style="float: right;">*2009 - 2013*</span>
-
-I also spent my undergraduate year abroad at [UC San Diego](https://ucsd.edu/), and I am currently taking mathematics courses with the [Open University](http://www.open.ac.uk/).
-
-Contact
-=====
-
-You can email me at [adrien@ecoffet.com](mailto:adrien@ecoffet.com).
+Prior to OpenAI, I was an AI resident (supervised by Jeff Clune and Kenneth O. Stanley) and then a research scientist (managed by Joel Lehman) at Uber AI Labs. Before transitioning to a research career, I was a software engineer at Quora. 
 
 ---
 
-###### Si vous faites partie de la famille Ecoffet, je serais heureux de vous donner un sous-domaine \<vous\>&#8203;.ecoffet.com et/ou une adresse e-mail \<vous\>&#8203;@ecoffet.com.
 ###### If you are a member of the Ecoffet family, I would be happy to provide you with a \<you\>&#8203;.ecoffet.com subdomain and/or a \<you\>&#8203;@ecoffet.com email address.
+###### Si vous faites partie de la famille Ecoffet, je serais heureux de vous donner un sous-domaine \<vous\>&#8203;.ecoffet.com et/ou une adresse e-mail \<vous\>&#8203;@ecoffet.com.
