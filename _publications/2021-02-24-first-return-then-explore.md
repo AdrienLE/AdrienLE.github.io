@@ -12,7 +12,7 @@ Reinforcement learning promises to solve complex sequential-decision problems au
 
 [Link to paper here](https://www.nature.com/articles/s41586-020-03157-9.epdf?sharing_token=fVSAoXFGOipXiv03jaRGFtRgN0jAjWel9jnR3ZoTv0M2nmoar2g6_K5n8IBFPE90s2PCF4tYuP4UnEffP83tohRanjcxryz9Usln4Rw7idY6ufIsQYVgwwD0B8UgE7JYzmgOuMdgNqvVMg7GsfFiI2ZBi9PjjmJtJGEDwzRPFWc%3D)
 
-You can cite this work using the BibTeX from Google Scholar, which should be as follows:
+You can cite this work using the following BibTeX:
 ```
 @Article{Ecoffet2021,
   author={Ecoffet, Adrien and Huizinga, Joost and Lehman, Joel and Stanley, Kenneth O. and Clune, Jeff},
