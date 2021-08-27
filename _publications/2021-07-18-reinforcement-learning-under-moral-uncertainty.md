@@ -1,10 +1,10 @@
 ---
 title: "Reinforcement Learning Under Moral Uncertainty"
 collection: publications
-permalink: /publication/2020-06-08-reinforcement-learning-under-moral-uncertainty
+permalink: /publication/2021-07-18-reinforcement-learning-under-moral-uncertainty
 excerpt: 'An ambitious goal for artificial intelligence is to create agents that behave ethically. Unfortunately, there is widespread disagreement about which ethical theory an agent should follow. This paper translates philosophical work on moral uncertainty into an RL algorithm and investigates how moral uncertainty can avoid extreme behavior compared to single theories.'
-date: 2020-06-08
-venue: 'arXiv'
+date: 2021-07-18
+venue: 'ICML 2021'
 paperurl: 'https://arxiv.org/pdf/2006.04734.pdf'
 authors: '<span class="me">Adrien Ecoffet</span>, Joel Lehman'
 ---
@@ -14,10 +14,12 @@ An ambitious goal for artificial intelligence is to create agents that behave et
 
 You can cite this work using the BibTeX from Google Scholar, which should be as follows:
 ```
-@article{ecoffet2020reinforcement,
-  title={Reinforcement Learning Under Moral Uncertainty},
+@inproceedings{ecoffet2021reinforcement,
+  title={Reinforcement learning under moral uncertainty},
   author={Ecoffet, Adrien and Lehman, Joel},
-  journal={arXiv preprint arXiv:2006.04734},
-  year={2020}
+  booktitle={International Conference on Machine Learning},
+  pages={2926--2936},
+  year={2021},
+  organization={PMLR}
 }
 ```
