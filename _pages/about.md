@@ -12,7 +12,7 @@ Hi, I'm Adrien Ecoffet. I am a research scientist at OpenAI.
 
 My research interests are reinforcement learning (particularly exploration and quality-diversity inspired approaches) and AI safety (particularly moral alignment). More recently I have been researching emergent complexity in multi-agent environments.
 
-Prior to OpenAI, I was an AI resident (supervised by Jeff Clune and Kenneth O. Stanley) and then a research scientist (managed by Joel Lehman) at Uber AI Labs. Before transitioning to a research career, I was a software engineer at Quora. 
+Prior to OpenAI, I was an AI resident and then a research scientist at Uber AI Labs. Before transitioning to a research career, I was a software engineer at Quora.
 
 ---
 
