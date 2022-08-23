@@ -233,7 +233,7 @@ defaults:
   # _blog
   - scope:
       path: ""
-      type: publications
+      type: blog
     values:
       layout: single
       author_profile: true
