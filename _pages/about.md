@@ -8,11 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm Adrien Ecoffet. I am a research scientist at OpenAI.
+Hi, I'm Adrien Ecoffet. I am a research scientist at OpenAI, currently working on scaling large language models. In the past, I have also done research in reinforcement learning and AI safety.
 
-My research interests are reinforcement learning (particularly exploration and quality-diversity inspired approaches) and AI safety (particularly moral alignment). More recently I have been researching emergent complexity in multi-agent environments.
-
-Prior to OpenAI, I was an AI resident and then a research scientist at Uber AI Labs. Before transitioning to a research career, I was a software engineer at Quora.
+Prior to OpenAI, I was an AI resident and then a research scientist at Uber AI Labs. Before my research career, I was a software engineer at Quora.
 
 ---
 
