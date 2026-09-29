@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "acorn": "8.18.0",
-    "jquery": "3.7.1",
+    "jquery": "4.0.0",
     "magnific-popup": "1.2.0",
     "uglify-js": "3.19.3"
   },
