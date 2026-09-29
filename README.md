@@ -2,7 +2,13 @@ A Github Pages template for academic websites. This was forked (then detached) b
 
 I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+## Dependency security
+
+Keep both `Gemfile.lock` and `package-lock.json` committed. Update dependencies and run the audits below when a security advisory arrives; deleting a lockfile does not fix a vulnerable dependency.
+
+The Ruby bundle uses Jekyll 3.10 and the plugins this site uses. It does not install the full `github-pages` theme bundle, whose unused remote-theme dependency restricts rubyzip to vulnerable versions. This keeps the local build on the GitHub Pages-compatible Jekyll series. GitHub's managed Pages builder controls its own installed dependencies.
+
+Dependabot checks the Ruby, npm, and GitHub Actions dependencies weekly. The validation workflow builds the site, audits both dependency sets, and checks that the committed JavaScript bundle is reproducible.
 
 # Instructions
 
@@ -16,13 +22,30 @@ I think I've got things running smoothly and fixed some major bugs, but feel fre
 
 See more info at https://academicpages.github.io/
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+## Run locally
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+Use Ruby 3.4 and Node.js 22 or newer.
+
+```sh
+bundle install
+npm ci --ignore-scripts
+npm run build:js
+bundle exec jekyll serve --livereload --host 127.0.0.1 --config _config.yml,_config.dev.yml
+```
+
+The development configuration uses localhost URLs and disables analytics. Browse to `http://localhost:4000`.
+
+## Validate dependency updates
+
+```sh
+bundle exec bundle-audit check --update
+npm audit
+npm run build:js
+npm run check:js
+bundle exec jekyll build
+```
+
+Commit the updated lockfiles and `assets/js/main.min.js` together with dependency changes. jQuery and Magnific Popup are locked npm dependencies; their code is included in the committed bundle, so rebuilding it is required for visitors to receive an update.
 
 # Changelog -- bugfixes and enhancements
 
