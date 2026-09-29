@@ -6,7 +6,7 @@ gem "jekyll", "~> 3.10.0"
 gem "kramdown-parser-gfm", "~> 1.1"
 # Jekyll's dependencies use libraries no longer bundled by default with Ruby 3.4.
 gem "base64", "~> 0.3"
-gem "bigdecimal", "~> 3.3"
+gem "bigdecimal", "~> 4.1"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.17"
