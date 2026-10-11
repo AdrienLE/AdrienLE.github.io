@@ -6,9 +6,11 @@ I think I've got things running smoothly and fixed some major bugs, but feel fre
 
 Keep both `Gemfile.lock` and `package-lock.json` committed. Update dependencies and run the audits below when a security advisory arrives; deleting a lockfile does not fix a vulnerable dependency.
 
-The Ruby bundle uses Jekyll 4.4 and the plugins this site uses. It does not install the full `github-pages` theme bundle, whose unused remote-theme dependency restricts rubyzip to vulnerable versions. Local builds and validation use the locked bundle. GitHub's managed Pages builder controls its own installed dependencies and does not guarantee these versions.
+The Ruby bundle uses Jekyll 4.4 and the plugins this site uses. It does not install the full `github-pages` theme bundle, whose unused remote-theme dependency restricts rubyzip to vulnerable versions. Local builds, validation, and production use the locked bundle.
 
-Dependabot checks the Ruby, npm, and GitHub Actions dependencies weekly. The validation workflow builds the site, audits both dependency sets, and checks that the committed JavaScript bundle is reproducible.
+Dependabot checks the Ruby, npm, and GitHub Actions dependencies weekly. The validation workflow builds the site, audits both dependency sets, and checks that the committed JavaScript bundle is reproducible. After these checks pass on `master`, it deploys the validated `_site` artifact to GitHub Pages. Pull requests run the same checks without deploying.
+
+The repository's Pages publishing source must be **GitHub Actions**. This lets the workflow use `bundle exec jekyll build` with `Gemfile.lock`, instead of GitHub's managed Jekyll bundle. The existing custom domain is `adrien.ecoffet.com`, with HTTPS enforced. A failed validation leaves the previous deployment live; the workflow can also be run manually from the Actions tab.
 
 # Instructions
 
