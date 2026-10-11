@@ -6,7 +6,7 @@ I think I've got things running smoothly and fixed some major bugs, but feel fre
 
 Keep both `Gemfile.lock` and `package-lock.json` committed. Update dependencies and run the audits below when a security advisory arrives; deleting a lockfile does not fix a vulnerable dependency.
 
-The Ruby bundle uses Jekyll 3.10 and the plugins this site uses. It does not install the full `github-pages` theme bundle, whose unused remote-theme dependency restricts rubyzip to vulnerable versions. This keeps the local build on the GitHub Pages-compatible Jekyll series. GitHub's managed Pages builder controls its own installed dependencies.
+The Ruby bundle uses Jekyll 4.4 and the plugins this site uses. It does not install the full `github-pages` theme bundle, whose unused remote-theme dependency restricts rubyzip to vulnerable versions. Local builds and validation use the locked bundle. GitHub's managed Pages builder controls its own installed dependencies and does not guarantee these versions.
 
 Dependabot checks the Ruby, npm, and GitHub Actions dependencies weekly. The validation workflow builds the site, audits both dependency sets, and checks that the committed JavaScript bundle is reproducible.
 
