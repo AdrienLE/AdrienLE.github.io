@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-# Keep the GitHub Pages-compatible Jekyll series without installing its unused
-# theme/import plugins (including the old rubyzip dependency).
-gem "jekyll", "~> 3.10.0"
+# Install Jekyll and the plugins this site uses without the unused github-pages
+# theme/import dependency chain (including the old rubyzip dependency).
+gem "jekyll", "~> 4.4.1"
 gem "kramdown-parser-gfm", "~> 1.1"
 # Jekyll's dependencies use libraries no longer bundled by default with Ruby 3.4.
 gem "base64", "~> 0.3"
